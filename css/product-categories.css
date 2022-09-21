@@ -1,0 +1,81 @@
+.categories{
+    padding: 1rem;
+}
+
+.categories h2{
+    font-size: 2.5rem;
+    margin-bottom: 3.3rem;
+}
+
+/* DISPLAYING FLEX FOR CATEGORIES PRODUCTS SIDE-TO-SIDE */
+/* HACIENDO FLEXBOX PARA PONER LOS PRODUCTOS DE CATEGORIA UNO AL LADO DEL OTRO */
+.categories .container .categories-list{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+/* USING CALC FOR THE SPACE ON THREE ELEMENTS - 1REM FOR SPACING ON ELEMENTS */
+/* DIVIDIENDO EL ESPACIO TOTAL DEL CONTENEDOR ENTRE LOS TRES ELEMENTOS -1 REM PARA ESPACIADO ENTRE ELLOS */
+.categories .container .categories-list .categories-product{
+    width: calc(100% / 3 - 0.7rem ) ;
+}
+
+
+/* ADAPTING IMGS FOR ELEMENTS WIDTH */
+
+.categories .container .categories-list .categories-product img{
+    width: 100%;
+    object-fit: cover;
+    /* IMPORTANTE */
+    vertical-align: top; /* ESTE ELEMENTO ES NUEVO PARA MI, LO USE PARA QUITAR EL ESPACIADO ENTRE EL LINK A MAS ABAJO Y LA IMAGEN, PUEDE SER UTIL EN ALGUNAS OCASIONES*/
+}
+
+/* DISPLAYING BLOCK FOR STYLES ON ''a'' LINK*/
+
+.categories .container .categories-list .categories-product a{
+    display: block;
+    padding: 1.2rem 0rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+   
+}
+
+/* HOVER EFFECT */
+.categories .container .categories-list .categories-product a:hover{
+    background-color: #037bc0 ;
+    transition: 0.2s all;
+    color: white;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:768px)
+
+
+{
+    .categories h2{
+        font-size: 2rem;
+    }
+
+    /* CATEGORIES LIST AND PRODUCTS*/
+    .categories .container .categories-list{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+       
+    }
+
+    .categories .container .categories-list .categories-product{
+       width: 90%;
+       margin-bottom: 1rem;
+       
+        
+    }
+}
+

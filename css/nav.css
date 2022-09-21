@@ -1,0 +1,75 @@
+/* THIS ITS STYLES FOR NAV-BAR */
+
+header .nav-bar{
+    width: 100%;
+    border-top: 0.1rem solid #e1e1e1;
+   
+    
+
+}
+
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header .nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+
+  
+}
+
+/* LINKS STYLES */
+
+header .container ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 500;
+    
+}
+
+header .container ul li a:hover{
+    text-decoration: underline;
+    transition: 0.2s all;
+}
+
+/* ---HERO IMAGE-- */
+
+main .hero-image{
+    width: 100%;
+    height: 50vw;
+}
+
+main .hero-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+
+
+}
+
+/* MEDIAQUERIES */
+
+/*  */
+
+@media screen and (max-width:768px)
+{
+    header .nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    header .container ul li {
+      margin-bottom: 1rem;
+    }
+
+}

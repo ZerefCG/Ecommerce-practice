@@ -1,0 +1,63 @@
+.footer-god{
+    margin-top: 2rem;
+    width: 100%;
+    background-image: linear-gradient(to right, #037bc0 33%, #1b9ae3 );
+    border-top: 1px solid #e1e1e1;
+}
+
+.footer-god .container{
+    display: flex;
+    margin-top:2rem;
+    flex-wrap: wrap;
+}
+
+
+.footer-god .container .footer-information{
+    text-align: left; 
+    width: calc(100% / 3);
+    color: white;
+}
+
+.footer-god .container .footer-information ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-god .container .footer-information ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: white;
+}
+
+.footer-god .container .footer-information ul li a:hover{
+    text-decoration: underline;
+    transition: 0.2s ease;
+}
+
+/* STYLES OF P ALL RESERVED */
+
+.footer-god  p{
+        width: 100%;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        color: white;
+}
+
+/* MEDIAQUERIES  */
+
+@media screen and (max-width:768px){
+    .footer-god .container{
+        flex-direction: column;
+       
+    }
+
+    .footer-god .container .footer-information{
+        text-align: center; 
+        width: 100%;
+        color: white;
+    }
+}

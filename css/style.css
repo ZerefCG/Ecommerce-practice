@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+    
+}
+
+
+/* HEADER SECTION */
+
+header h1{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 3.2rem;
+}
+
+header .blue-title{
+        color: #037bc0;
+}
+
+
+/* MEDIAQUERIES */
+
+@media screen and (max-width:768px)
+{
+    header h1{
+        font-size: 2.7rem;
+    }
+}

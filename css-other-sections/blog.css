@@ -1,0 +1,147 @@
+main{
+    width: 100%;
+}
+
+main .container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+main .container h2{
+    width: 100%;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+/* SECTION WIDTH */
+
+ main .container .articles-section{
+    width: 66%;
+ /* border: 1px solid black;  ELIMINAR DESPUES */
+ }
+
+
+ /* ARTICLES  STYLES TITLE AND PARAGRAPH*/
+ main .container article h2{
+    text-align: left;
+ }
+
+ main .container article{
+    /* border: 1px solid black;  ELIMINAR DESPUES */
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: 500; 
+    
+ }
+
+ /* A BIT OF PADDING FOR ARTICLE CONTENT */
+
+.container .articles-section article .content-article{
+    padding: 1rem;
+   
+ }
+
+ /* IMAGES ARTICLES */
+
+ .container .articles-section article .img-article{
+    width: 100%;
+    
+ }
+ .container .articles-section article .img-article img{
+    width: 100%;
+    object-fit: cover;
+ }
+
+
+ /* DESCRIPTION DATE TIME STYLES WITH FLEXBOX AND SPAN CLASS */
+
+ .container .articles-section article .description-date{
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+ }
+ .container .articles-section article .description-date .date-color{
+    color: #037bc0;
+ }
+
+ /* NOW STYLES BUTTON */
+
+ .container article .button-article{
+    display:inline-block;
+    padding: 1rem 6.7rem;
+    background-color: #8cbc00;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.3rem;
+   
+ }
+ .container article .button-article:hover{
+    background-color: #799c0f;
+    transition: 0.2s all;
+ }
+
+
+ /* ------------ASIDE -------*/
+
+ main .container aside{
+    width: 32%;
+   /* border: 1px solid black;  ELIMINAR DESPUES */
+    
+ }
+
+main .container aside h3{
+    text-align: center;
+    /* margin-bottom: 3rem; */
+    font-size: 1.6rem;
+}
+
+/* LINK STYLES ON ASIDE */
+
+/* main .container aside ul{
+    list-style: none;
+} */
+
+main .container aside ul a{
+    line-height: 2rem;
+    text-decoration: none;
+    color: black;
+}
+
+main .container aside ul a:hover{
+    text-decoration: underline;
+    transition: .2 all;
+}
+
+/* MEDIAQUERIES */
+
+@media screen and (max-width:768px)
+{
+    main .container .articles-section{
+        width: 100%;
+        margin-bottom: 2rem;
+     }
+
+     
+ .container .articles-section article .description-date{
+    display: block;
+ }
+
+ main .container aside{
+    width: 100%;
+ }
+
+ main .container aside ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+ }
+
+ .container article .button-article{
+   display:block;
+   text-align: center;
+ }
+}

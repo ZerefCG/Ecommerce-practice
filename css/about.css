@@ -1,0 +1,63 @@
+.about{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.about .container{
+    display: flex;
+    max-width: 100%;
+    text-align: left;
+    align-items: center;
+ 
+    background-color: #037bc0;
+   
+}
+
+/* DIVIDIENDO ESPACIO ENTRE LOS DOS CONTENEDORES */
+
+.about .container .about-info{
+    width: 50%;
+}
+
+/* ADAPTING IMG TO CONTAINER */
+
+.about .container .about-info img{
+    width: 100%;
+    object-fit:cover;
+    vertical-align: top;
+
+}
+
+/* STYLE ABOUT INFO */
+
+.about .container .about-info:nth-child(2){
+  text-align: justify;
+  padding: 3.125rem ;
+  color: white;
+  /* OTRA OPCION DEPENDE DE COMODIDAD SERIA*/
+ 
+
+}
+
+/* STYLE TEXT  ABOUT*/
+.about .container .about-info:nth-child(2) h2{
+    font-size: 2rem;
+
+}
+
+.about .container .about-info:nth-child(2) p{
+    font-size: 1rem;
+    font-weight: 300;
+    
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:768px){
+    .about .container .about-info{
+        width: 100%;
+    }
+    .about .container{
+        flex-wrap: wrap;
+    }
+}
